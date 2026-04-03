@@ -62,7 +62,7 @@ def logical(board, bound, row_list, col_list, m, n):
                         return False
                     change |= ch
 
-                # Rule 1.1 (gọi lần thứ 2 - giống code gốc)
+                # Rule 1.1 
                 valid, ch = apply_rule1_1_block_row(board, bound, i, k, row_list, previous_end, forward_start, m, n)
                 if not valid:
                     return False
@@ -103,7 +103,7 @@ def logical(board, bound, row_list, col_list, m, n):
                         return False
                     change |= ch
 
-                # Rule 1.1 (gọi lần thứ 2 - giống code gốc)
+                # Rule 1.1 
                 valid, ch = apply_rule1_1_block_col(board, bound, j, k, col_list, previous_end, forward_start, m, n)
                 if not valid:
                     return False
